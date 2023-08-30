@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 100px;
+    display: flex;
+    font-family: 'Press Start 2P';
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 27, 55);
+    color: white;
+}
+button {
+    font-family: 'Press Start 2P';
+}
+
+button.msg {
+    padding: 5px;
+    font-size: 12px;
+}
+
+button.reset-game {
+    margin-top: 20px;
+    background-color: red;
+    padding: 15px;
+    color: beige;
+
+}
+.wrapper {
+    text-align: center;
+}
+
+.heading {
+    color: red;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.status {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.square {
+    width: 7rem;
+    height: 7rem;
+    margin-left: -1px;
+    margin-top: -1px;
+    /* border: solid gray; */
+    font-size: 50px;
+    font-weight: bold;
+
+}
+.board_row {
+    display: flex;
+}
+
+.game {
+    margin: 1rem;
+}
+.game-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px; 
+}
+
+.game-board > :nth-child(2) {
+    padding-top: 100px;
+    height: 100%;
+    width: 50%;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .game-board {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
